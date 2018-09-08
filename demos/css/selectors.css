@@ -1,0 +1,40 @@
+/*Class Selectors*/
+.base-box {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+    padding: 3px 3px 3px 7px;
+  }
+  
+.important {
+font-weight: bold;
+}
+
+.editor-note {
+background-color: #9999ff;
+border-left: 6px solid #333399;
+}
+
+.warning {
+background-color: #ff9999;
+border-left: 6px solid #993333;
+}
+
+/*Attr perfect match selectors*/
+/* All elements with the attribute "data-vegetable"
+   are given green text */
+[data-vegetable] {
+  color: green;
+}
+
+/* All elements with the attribute "data-vegetable"
+  with the exact value "liquid" are given a golden
+  background color */
+[data-vegetable="liquid"] {
+  background-color: goldenrod;
+}
+
+/* All elements with the attribute "data-vegetable",
+  containing the value "spicy", even among others,
+  are given a red text color */
+[data-vegetable~="spicy"] {
+  color: red;
+}

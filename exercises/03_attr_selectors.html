@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <title>Css</title>
+    <link rel="icon" href="../images/css3.png">
+    <style>
+        /*rule 1*/
+        li[] {
+            background: url("../images/en-GB.png") 5px center no-repeat;
+        }
+
+        /*rule 2*/
+        li[] {
+            background: url("../images/de.png") 5px center no-repeat;
+        }
+        
+        /*rule 3*/
+        li[] {
+            background: url("../images/es.png") 5px center no-repeat;
+        }
+        
+        /*rule 4*/
+        li[] {
+            background-color: rgba(0,255,0,0.7);
+        }
+
+        /*rule 5*/
+        li[] {
+            background-color: rgba(0,0,255,0.5);
+        }
+
+        /*rule 6*/
+        li[] {
+            background-color: rgba(255,0,0,0.7);
+        }
+
+        li[] {
+            font-weight: bold;
+        }
+
+        li[] {
+            font-style: italic;
+            color: #666;
+        }
+
+        /*general style*/
+        ol{
+            padding:0;
+        }
+        li {
+            padding: 3px 3px 3px 34px;
+            margin-bottom: 5px;
+            list-style-position: inside;
+        }        
+
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li lang="en-GB" data-perf="inc-pro">Manchester United</li>
+        <li lang="es" data-perf="same-pro">Barcelona</li>
+        <li lang="de" data-perf="dec">Bayern Munich</li>
+        <li lang="es" data-perf="same">Real Madrid</li>
+        <li lang="de" data-perf="inc-rel">Borussia Dortmund</li>
+        <li lang="en-GB" data-perf="dec-rel">Southampton FC</li>
+    </ol>
+</body>
+
+</html>

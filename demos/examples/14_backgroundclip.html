@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Css</title>
+    <link rel="icon" href="../../images/css3.png">
+    <style>
+        div {
+            width: 70px;
+            height: 70px;
+            border: 30px solid rgba(0, 0, 0, 0.548);
+            /*border: 20px solid rgba(245, 13, 13, 0.5);*/
+            padding: 20px;
+            margin: 20px 0;
+            background-size: 140px;
+            background-position: center;
+            background-image: url('../../images/ff-logo.png');
+            background-color: gold;
+        }
+
+        .default {
+            background-clip: border-box;
+        }
+
+        .padding-box {
+            background-clip: padding-box;
+        }
+
+        .content-box {
+            background-clip: content-box;
+        }
+        .text-transpartent{
+            background-clip:text;
+            -webkit-background-clip: text;
+            color:transparent;
+            font-weight: 800;
+            font-size: 25px;
+            align-content: center;
+        }
+    </style>
+</head>
+
+<body>        
+    <div class="default"></div>
+    <div class="padding-box"></div>
+    <div class="content-box"></div>
+    <div class="text-transpartent">
+        HOLA firefox
+    </div>
+
+</body>
+
+</html>

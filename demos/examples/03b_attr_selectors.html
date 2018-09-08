@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Css</title>
+        <link rel="icon" href="../images/css3.png">  
+        <style>
+            /*attr lang es igual a es ó empieza con es-*/
+        [lang|="es"] {
+            font-weight: bold;
+        }
+        /*attr data-quantity empieza con optional*/
+        [data-quantity^="optional"] {
+            opacity: 0.5;
+        }
+
+        /*att data-quantity termina con kg*/
+        [data-quantity$="kg"] {
+            font-weight: bold;
+        }
+        
+        /*attr data-quantity has substring not spicy*/
+        [data-vegetable*="not spicy"] {
+            color:green;
+
+        }        
+        </style>      
+    </head>
+    <body> 
+        <h2>Ingredientes <i lang="es-CO">Mi Plato</i></h2>
+        <ul>
+            <li data-quantity="1kg" data-vegetable>Papas</li>
+            <li data-quantity="3" data-vegetable>Tomates</li>
+            <li data-quantity="3" data-vegetable>Ajos</li>
+            <li data-quantity="700g" data-vegetable="not spicy like chili">Sal</li>
+            <li data-quantity="2kg" data-meat>Pollo</li>            
+            <li  data-quantity="optional 150g" data-meat>Tocineta</li>
+            <li data-quantity="optional 10ml" data-vegetable="liquid">Vino</li>
+            <li data-quantity="25cl" data-vegetable="liquid">Aceite</li>
+        </ul>            
+    </body>    
+</html>

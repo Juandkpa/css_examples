@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Flexbox 0 — starting code</title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header {
+            background: purple;
+            height: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            line-height: 100px;
+            margin: 0;
+        }
+
+        article {
+            /*padding: 10px;*/
+            margin: 10px;
+            background: rgb(255, 208, 0);            
+            box-shadow: 8px 8px 5px #aaaaaa;
+            max-width: 33%;            
+        }
+
+        /* Add your flexbox CSS below here */
+
+        section {
+            display: flex;
+        }
+
+        img {        
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
+            filter: grayscale(100%);
+            transition: all .5s;
+
+        }
+
+        img:hover{
+            filter:none;
+            -ms-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+        
+        .art-img {
+            overflow:hidden;
+        }
+        .art-content {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sample flexbox example</h1>
+    </header>
+
+    <section>
+        <article>
+            <div class="art-img">
+                    <img src="../../images/teddy-bear.jpg" alt="A teddy bear in a box">
+            </div>
+            <div class="art-content">
+                <h2>First article</h2>
+                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry
+                    vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid
+                    single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth
+                    health goth gastropub hammock.</p>
+            </div>
+
+
+        </article>
+
+        <article>
+            <div class="art-img">
+                <img src="../../images/teddy-bear.jpg" alt="A teddy bear in a box">
+            </div>
+            <div class="art-content">
+                <h2>Second article</h2>
+                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry
+                    vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid
+                    single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth
+                    health goth gastropub hammock.</p>
+            </div>
+        </article>
+
+        <article>
+            <div class="art-img">
+                <img src="../../images/teddy-bear.jpg" alt="A teddy bear in a box">
+            </div>
+            <div class="art-content">
+                <h2>Third article</h2>
+                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry
+                    vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid
+                    single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth
+                    health goth gastropub hammock.</p>
+                    <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia
+                            umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse
+                            put a bird on it. Listicle pickled man bun cornhole heirloom art party.</p>
+            </div>
+
+
+            
+        </article>
+    </section>
+</body>
+
+</html>
